@@ -35,3 +35,98 @@ h2 {
 footer p {
     color: #ddd;
 }
+
+/* ===============================
+   HEADER
+================================ */
+.name-header {
+    font-size: 3rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.header-details a {
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.header-details a:hover {
+    text-decoration: underline;
+}
+
+/* ===============================
+   CV FORM CARD
+================================ */
+.cv-form {
+    background: rgba(255, 255, 255, 0.96);
+    border-radius: 14px;
+    padding: 1.75rem;
+    max-width: 480px;
+    width: 100%;
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(6px);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.cv-form:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 18px 45px rgba(0, 0, 0, 0.25);
+}
+
+/* ===============================
+   INPUT & BUTTON
+================================ */
+.cv-form .input-group {
+    display: flex;
+    gap: 10px;
+}
+
+.cv-form input {
+    flex: 1;
+    border-radius: 10px;
+    padding: 0.65rem 0.85rem;
+    border: 1px solid #ced4da;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.cv-form input:focus {
+    border-color: #0d6efd;
+    box-shadow: 0 0 0 3px rgba(13, 110, 253, 0.25);
+}
+
+.cv-form button {
+    border-radius: 10px;
+    padding: 0.65rem 1.1rem;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+/* ===============================
+   MOBILE TWEAKS
+================================ */
+@media (max-width: 576px) {
+    .name-header {
+        font-size: 2.2rem;
+    }
+
+    .cv-form {
+        padding: 1.4rem;
+    }
+
+    .cv-form .input-group {
+        flex-direction: column;
+    }
+
+    .cv-form button {
+        width: 100%;
+    }
+}
+
+
+#responseAlert {
+    max-width: 480px;      /* matches your cv-form width */
+    width: 100%;            /* responsive */
+    text-align: center;     /* message centered */
+    padding: 0.75rem 1rem;  /* slightly smaller padding */
+    font-size: 0.95rem;     /* slightly smaller text */
+}

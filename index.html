@@ -6,20 +6,57 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vidaal Basha - CV</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="style.css">
-    <style>
 
-    </style>
+    <script src="main.js" defer></script>
 </head>
 
 <body class="bg-dark text-light">
 
-    <header class="bg-secondary text-center py-5 mb-4">
+    <header class="bg-secondary text-center py-5 mb-4 position-relative">
         <h1 class="name-header">Vidaal Basha</h1>
         <p class="lead">Software Engineer / Low-Code Engineer</p>
-        <p> <a href="https://www.linkedin.com/in/vidaal-basha" target="_blank">🔗 LinkedIn</a> | 📨
-            vidaalbasha641@gmail.com | 📞 +27 62 936 4536 | 📍 Alberton, Gauteng, South Africa</p>
+
+        <p class="header-details">
+            <span> 📨 vidaalbasha641@gmail.com</span>
+            <span> | 📞 +27 62 936 4536</span>
+            <span> | 📍 Alberton, Gauteng, South Africa</span>
+            | <a href="https://www.linkedin.com/in/vidaal-basha" target="_blank">🔗 LinkedIn</a>
+            | <a href="https://github.com/VG-SAMA?tab=repositories" target="_blank">🔗 GitHub</a>
+        </p>
+
+        <div class="container">
+            <form class="d-flex justify-content-center mt-4" id="cvForm">
+                <div class="cv-form">
+                    <label class="form-label fw-semibold mb-2" style="color:black;">
+                        Want to get emailed my CV?
+                    </label>
+
+                    <div class="input-group">
+                        <input id="userEmail" type="email" class="form-control" placeholder="Enter your email address"
+                            required />
+                        <button type="submit" id="emailAddSubmit" class="btn btn-dark">
+                            Send<i class="bi bi-send-arrow-down"></i>
+                        </button>
+                    </div>
+                </div>
+            </form>
+
+            <!-- Alert -->
+            <!-- Alert -->
+            <div class="d-flex justify-content-center mt-3">
+                <div id="responseAlert" class="alert alert-dismissible fade" role="alert" hidden>
+                    <span id="responseMessage"></span>
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>
+            </div>
+
+
+
+        </div>
     </header>
+
 
     <div class="container">
         <!-- About Section -->
@@ -125,10 +162,11 @@
     </div>
 
     <footer class="bg-secondary text-center py-4 mt-5">
-        <p>&copy; 2025 Vidaal Basha. All Rights Reserved.</p>
+        &copy; <span id="year"></span> Vidaal Basha
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
 
 </html>
