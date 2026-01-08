@@ -55,7 +55,7 @@ async function emailPost() {
                     message = result.detail
                 }
                 
-                else if (typeof result == 'object'){
+                else if (typeof result === 'object'){
                     message = JSON.stringify(result.detail)
                 }
                 
