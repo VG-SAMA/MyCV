@@ -24,7 +24,7 @@ async function sendEmailhandler(){
 
 async function emailPost() {
     try {
-        const emailEndPoint = 'https://send-cv-api.onrender.com/api/sendemail'
+        const emailEndPoint = 'http://127.0.0.1:8000/api/sendemail'
         const emailAdd = document.getElementById('userEmail').value.trim()
 
         if (!emailAdd) {
@@ -61,7 +61,7 @@ async function emailPost() {
         }
 
         displayMessage(
-            `✅ Status ${result.status}, Message ${result.message}`
+            `✅ Message ${result.message}`
             
         );
 
