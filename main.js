@@ -24,6 +24,7 @@ async function sendEmailhandler(){
 
 async function emailPost() {
     try {
+        const localUrl = 'http://localhost:8000/api/sendemail'
         const emailEndPoint = 'https://send-cv-api.onrender.com/api/sendemail'
         const emailAdd = document.getElementById('userEmail').value.trim()
 
@@ -33,7 +34,7 @@ async function emailPost() {
         }
     
         const sendData = new EmailPost(emailAdd)
-        const response = await fetch(emailEndPoint, {
+        const response = await fetch(localUrl, {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(sendData)
@@ -52,7 +53,13 @@ async function emailPost() {
             if (result) {
                 if (typeof result.detail === 'string') {
                     message = result.detail
-                } else if (Array.isArray(result.detail)) {
+                }
+                
+                else if (typeof result == 'object'){
+                    message = JSON.stringify(result.detail)
+                }
+                
+                else if (Array.isArray(result.detail)) {
                     message = result.detail.map(e => e.msg).join(', ')
                 }
             }
@@ -65,7 +72,9 @@ async function emailPost() {
             
         );
 
-    } catch (error) {
+    } 
+    
+    catch (error) {
         console.error(error)
         displayMessage(error.message, 'danger', 10000)
     }
