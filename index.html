@@ -1,172 +1,259 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vidaal Basha - CV</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="style.css">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="style.css" />
 
     <script src="main.js" defer></script>
-</head>
+  </head>
 
-<body class="bg-dark text-light">
-
+  <body class="bg-dark text-light">
     <header class="bg-secondary text-center py-5 mb-4 position-relative">
-        <h1 class="name-header">Vidaal Basha</h1>
-        <p class="lead">Software Engineer / Low-Code Engineer</p>
+      <h1 class="name-header">Vidaal Basha</h1>
+      <p class="lead">Software Engineer / Low-Code Engineer</p>
 
-        <p class="header-details">
-            <span> 📨 vidaalbasha641@gmail.com</span>
-            <span> | 📞 +27 62 936 4536</span>
-            <span> | 📍 Alberton, Gauteng, South Africa</span>
-            | <a href="https://www.linkedin.com/in/vidaal-basha" target="_blank">🔗 LinkedIn</a>
-            | <a href="https://github.com/VG-SAMA?tab=repositories" target="_blank">🔗 GitHub</a>
-        </p>
+      <p class="header-details">
+        <span> 📨 vidaalbasha641@gmail.com</span>
+        <span> | 📞 +27 62 936 4536</span>
+        <span> | 📍 Alberton, Gauteng, South Africa</span>
+        |
+        <a href="https://www.linkedin.com/in/vidaal-basha" target="_blank"
+          >🔗 LinkedIn</a
+        >
+        |
+        <a href="https://github.com/VG-SAMA?tab=repositories" target="_blank"
+          >🔗 GitHub</a
+        >
+      </p>
 
-        <!-- Comment from here -->
-        <div class="container">
-            <form class="d-flex justify-content-center mt-4" id="cvForm">
-                <div class="cv-form">
-                    <label class="form-label fw-semibold mb-2" style="color:black;">
-                        Want to get emailed my CV?
-                    </label>
+      <!-- Comment from here -->
+      <div class="container">
+        <form class="d-flex justify-content-center mt-4" id="cvForm">
+          <div class="cv-form">
+            <label class="form-label fw-semibold mb-2" style="color: black">
+              Want to get emailed my CV?
+            </label>
 
-                    <div class="input-group">
-                        <input id="userEmail" type="email" class="form-control" placeholder="Enter your email address"
-                            required />
-                        <button type="submit" id="emailAddSubmit" class="btn btn-dark">
-                            Send<i class="bi bi-send-arrow-down"></i>
-                        </button>
-                    </div>
-                </div>
-            </form>
-
-
-
-            <div class="d-flex justify-content-center mt-3">
-                <div id="responseAlert" class="alert alert-dismissible fade" role="alert" hidden>
-                    <span id="responseMessage"></span>
-                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-                </div>
+            <div class="cv-input-wrapper">
+              <input
+                id="userEmail"
+                type="email"
+                class="form-control"
+                placeholder="Enter your email address"
+                required
+              />
+              <button type="submit" id="emailAddSubmit" class="btn btn-dark">
+                Send<i class="bi bi-send-arrow-down"></i>
+              </button>
             </div>
-        </div>
+          </div>
+        </form>
 
-        <!-- To here -->
+        <div class="d-flex justify-content-center mt-3">
+          <div
+            id="responseAlert"
+            class="alert alert-dismissible fade"
+            role="alert"
+            hidden
+          >
+            <span id="responseMessage"></span>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="alert"
+              aria-label="Close"
+            ></button>
+          </div>
+        </div>
+      </div>
+
+      <!-- To here -->
     </header>
 
-
     <div class="container">
-        <!-- About Section -->
-        <section class="mb-5">
-            <h2 class="mb-3 text-danger" data-bs-toggle="collapse" data-bs-target="#aboutMe" aria-expanded="true"
-                aria-controls="aboutMe">
-                About Me <span class="arrow">▼</span>
-            </h2>
-            <div class="collapse show" id="aboutMe">
-                <p>Software Engineer passionate about building robust and efficient software solutions. I graduated with
-                    a Bachelors in Computer and Information Sciences in Application Development from Varsity College
-                    Sandton in 2023, following a Higher Certificate in IT Support Services completed with distinction in
-                    2020.</p>
-                <p>Currently, I work as a Microsoft Power Platform Developer, designing and implementing automation
-                    workflows and
-                    API integrations that streamline business processes. I enjoy applying my skills in C# and Python to
-                    build APIs and custom solutions that enhance operational efficiency.</p>
-                <p>Beyond my current role, I have a strong passion for backend development using C# and Python, building
-                    APIs, and connecting systems in creative ways. My goal is to continue expanding my software
-                    engineering skills while delivering practical, high-impact solutions.</p>
-            </div>
-        </section>
+      <!-- About Section -->
+      <section class="mb-5">
+        <h2
+          class="mb-3 text-danger"
+          data-bs-toggle="collapse"
+          data-bs-target="#aboutMe"
+          aria-expanded="true"
+          aria-controls="aboutMe"
+        >
+          About Me <span class="arrow">▼</span>
+        </h2>
+        <div class="collapse show" id="aboutMe">
+          <p>
+            Software Engineer passionate about building robust and efficient
+            software solutions. I graduated with a Bachelors in Computer and
+            Information Sciences in Application Development from Varsity College
+            Sandton in 2023, following a Higher Certificate in IT Support
+            Services completed with distinction in 2020.
+          </p>
+          <p>
+            Currently, I work as a Microsoft Power Platform Developer, designing
+            and implementing automation workflows and API integrations that
+            streamline business processes. I enjoy applying my skills in C# and
+            Python to build APIs and custom solutions that enhance operational
+            efficiency.
+          </p>
+          <p>
+            Beyond my current role, I have a strong passion for backend
+            development using C# and Python, building APIs, and connecting
+            systems in creative ways. My goal is to continue expanding my
+            software engineering skills while delivering practical, high-impact
+            solutions.
+          </p>
+        </div>
+      </section>
 
-        <!-- Skills Section -->
-        <section class="mb-5">
-            <h2 class="mb-3 text-danger" data-bs-toggle="collapse" data-bs-target="#skills" aria-expanded="true"
-                aria-controls="skills">
-                Skills & Competencies <span class="arrow">▼</span>
-            </h2>
-            <div class="collapse show" id="skills">
-                <ul class="list-group list-group-flush">
-                    <li class="list-group-item bg-dark text-light border-secondary"><strong>Languages:</strong> PowerFx,
-                        C#, Python, JavaScript, SQL, PowerShell</li>
-                    <li class="list-group-item bg-dark text-light border-secondary"><strong>Frameworks & Tools:</strong>
-                        Power Automate, PowerApps, .NET Core, FastAPI, RESTful APIs, Angular, Django MVT, Django REST
-                        Framework</li>
-                    <li class="list-group-item bg-dark text-light border-secondary"><strong>Cloud & Platforms:</strong>
-                        Microsoft Azure (Basic), SharePoint, Project Online, Dataverse</li>
-                    <li class="list-group-item bg-dark text-light border-secondary"><strong>Automation &
-                            Integration:</strong> API Authentication (OAuth2, JWT), Custom Connectors, Workflow
-                        Orchestration</li>
-                    <li class="list-group-item bg-dark text-light border-secondary"><strong>Other:</strong> HTML, CSS,
-                        Git, Postman, JSON, PDF/HTML Report Automation, ERP support/integration</li>
-                </ul>
-            </div>
-        </section>
+      <!-- Skills Section -->
+      <section class="mb-5">
+        <h2
+          class="mb-3 text-danger"
+          data-bs-toggle="collapse"
+          data-bs-target="#skills"
+          aria-expanded="true"
+          aria-controls="skills"
+        >
+          Skills & Competencies <span class="arrow">▼</span>
+        </h2>
+        <div class="collapse show" id="skills">
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item bg-dark text-light border-secondary">
+              <strong>Languages:</strong> PowerFx, C#, Python, JavaScript, SQL,
+              PowerShell
+            </li>
+            <li class="list-group-item bg-dark text-light border-secondary">
+              <strong>Frameworks & Tools:</strong> Power Automate, PowerApps,
+              .NET Core, FastAPI, RESTful APIs, Angular, Django MVT, Django REST
+              Framework
+            </li>
+            <li class="list-group-item bg-dark text-light border-secondary">
+              <strong>Cloud & Platforms:</strong> Microsoft Azure (Basic),
+              SharePoint, Project Online, Dataverse
+            </li>
+            <li class="list-group-item bg-dark text-light border-secondary">
+              <strong>Automation & Integration:</strong> API Authentication
+              (OAuth2, JWT), Custom Connectors, Workflow Orchestration
+            </li>
+            <li class="list-group-item bg-dark text-light border-secondary">
+              <strong>Other:</strong> HTML, CSS, Git, Postman, JSON, PDF/HTML
+              Report Automation, ERP support/integration
+            </li>
+          </ul>
+        </div>
+      </section>
 
-        <!-- Education Section -->
-        <section class="mb-5">
-            <h2 class="mb-3 text-danger" data-bs-toggle="collapse" data-bs-target="#education" aria-expanded="true"
-                aria-controls="education">
-                Education <span class="arrow">▼</span>
-            </h2>
-            <div class="collapse show" id="education">
-                <ul class="list-group list-group-flush">
-                    <li class="list-group-item bg-dark text-light border-secondary"><strong>Software Engineering
-                            Bootcamp in Python:</strong> Stellenbosch University in Collaboration with HyperionDev (Jul
-                        2025 - Jan 2026)</li>
-                    <li class="list-group-item bg-dark text-light border-secondary"><strong>Bachelors in Computer and
-                            Information Sciences (Application Development):</strong> Varsity College Sandton (Jan 2021 -
-                        Dec 2023) - Distinction Pass</li>
-                    <li class="list-group-item bg-dark text-light border-secondary"><strong>Higher Certificate in IT
-                            Support Services:</strong> Varsity College Sandton (Jan 2020 - Dec 2020) - Distinction Pass
-                    </li>
-                    <li class="list-group-item bg-dark text-light border-secondary"><strong>Matric:</strong> Alberton
-                        High School (2019)</li>
-                </ul>
-            </div>
-        </section>
+      <!-- Education Section -->
+      <section class="mb-5">
+        <h2
+          class="mb-3 text-danger"
+          data-bs-toggle="collapse"
+          data-bs-target="#education"
+          aria-expanded="true"
+          aria-controls="education"
+        >
+          Education <span class="arrow">▼</span>
+        </h2>
+        <div class="collapse show" id="education">
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item bg-dark text-light border-secondary">
+              <strong>Software Engineering Bootcamp in Python:</strong>
+              Stellenbosch University in Collaboration with HyperionDev (Jul
+              2025 - Jan 2026)
+            </li>
+            <li class="list-group-item bg-dark text-light border-secondary">
+              <strong
+                >Bachelors in Computer and Information Sciences (Application
+                Development):</strong
+              >
+              Varsity College Sandton (Jan 2021 - Dec 2023) - Distinction Pass
+            </li>
+            <li class="list-group-item bg-dark text-light border-secondary">
+              <strong>Higher Certificate in IT Support Services:</strong>
+              Varsity College Sandton (Jan 2020 - Dec 2020) - Distinction Pass
+            </li>
+            <li class="list-group-item bg-dark text-light border-secondary">
+              <strong>Matric:</strong> Alberton High School (2019)
+            </li>
+          </ul>
+        </div>
+      </section>
 
-        <!-- Experience Section -->
-        <section class="mb-5">
-            <h2 class="mb-3 text-danger" data-bs-toggle="collapse" data-bs-target="#experience" aria-expanded="true"
-                aria-controls="experience">
-                Work Experience <span class="arrow">▼</span>
-            </h2>
-            <div class="collapse show" id="experience">
-                <h5 class="text-success">Power Platform Developer, Everllence SE South Africa (Feb 2024 - Present)</h5>
-                <h6>As a Power Platform Developer at Everllence SE South Africa, I design and implement end-to-end
-                    solutions, applications, automation workflows, and integrations, connecting systems like SharePoint,
-                    Project Online, and Dataverse. I leverage custom solutions that streamline business operations,
-                    reduce manual work, and improve data visibility across the organization.</h6>
-                <br>
-                <ul class="list-group list-group-flush">
-                    <li class="list-group-item bg-dark text-light border-secondary">Designed and implemented end-to-end
-                        automation workflows using Power Platform, SharePoint, and Project Online.</li>
-                    <li class="list-group-item bg-dark text-light border-secondary">Built custom APIs for project
-                        creation, updates, and delivery tracking, reducing manual setup steps.</li>
-                    <li class="list-group-item bg-dark text-light border-secondary">Developed a Quality Control Plan
-                        automation that generates PDFs, emails them, and stores them in SharePoint.</li>
-                    <li class="list-group-item bg-dark text-light border-secondary">Created a Training Request
-                        Management App, fully automating multi-user approval workflows.</li>
-                    <li class="list-group-item bg-dark text-light border-secondary">Designed and deployed a Kaizen
-                        improvement tracking system integrating approval workflows and document libraries.</li>
-                    <li class="list-group-item bg-dark text-light border-secondary">Developed Business Trip, Expense &
-                        Subsistence Claim solutions for HR and Finance using Dataverse, Power Automate, and Power Apps.
-                    </li>
-                    <li class="list-group-item bg-dark text-light border-secondary">Built API-driven systems connecting
-                        PowerApps and Project Online for full project lifecycle tracking.</li>
-                </ul>
-            </div>
-        </section>
+      <!-- Experience Section -->
+      <section class="mb-5">
+        <h2
+          class="mb-3 text-danger"
+          data-bs-toggle="collapse"
+          data-bs-target="#experience"
+          aria-expanded="true"
+          aria-controls="experience"
+        >
+          Work Experience <span class="arrow">▼</span>
+        </h2>
+        <div class="collapse show" id="experience">
+          <h5 class="text-success">
+            Power Platform Developer, Everllence SE South Africa (Feb 2024 -
+            Present)
+          </h5>
+          <h6>
+            As a Power Platform Developer at Everllence SE South Africa, I
+            design and implement end-to-end solutions, applications, automation
+            workflows, and integrations, connecting systems like SharePoint,
+            Project Online, and Dataverse. I leverage custom solutions that
+            streamline business operations, reduce manual work, and improve data
+            visibility across the organization.
+          </h6>
+          <br />
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item bg-dark text-light border-secondary">
+              Designed and implemented end-to-end automation workflows using
+              Power Platform, SharePoint, and Project Online.
+            </li>
+            <li class="list-group-item bg-dark text-light border-secondary">
+              Built custom APIs for project creation, updates, and delivery
+              tracking, reducing manual setup steps.
+            </li>
+            <li class="list-group-item bg-dark text-light border-secondary">
+              Developed a Quality Control Plan automation that generates PDFs,
+              emails them, and stores them in SharePoint.
+            </li>
+            <li class="list-group-item bg-dark text-light border-secondary">
+              Created a Training Request Management App, fully automating
+              multi-user approval workflows.
+            </li>
+            <li class="list-group-item bg-dark text-light border-secondary">
+              Designed and deployed a Kaizen improvement tracking system
+              integrating approval workflows and document libraries.
+            </li>
+            <li class="list-group-item bg-dark text-light border-secondary">
+              Developed Business Trip, Expense & Subsistence Claim solutions for
+              HR and Finance using Dataverse, Power Automate, and Power Apps.
+            </li>
+            <li class="list-group-item bg-dark text-light border-secondary">
+              Built API-driven systems connecting PowerApps and Project Online
+              for full project lifecycle tracking.
+            </li>
+          </ul>
+        </div>
+      </section>
     </div>
 
     <footer class="bg-secondary text-center py-4 mt-5">
-        &copy; <span id="year"></span> Vidaal Basha
+      &copy; <span id="year"></span> Vidaal Basha
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-
-</body>
-
+  </body>
 </html>

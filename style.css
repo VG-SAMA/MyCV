@@ -76,22 +76,38 @@ footer p {
 /* ===============================
    INPUT & BUTTON
 ================================ */
-.cv-form .input-group {
+.cv-input-wrapper {
     display: flex;
     gap: 10px;
+    width: 100%;
 }
 
-.cv-form input {
+.cv-input-wrapper input {
     flex: 1;
+    width: 100%;
+}
+
+/* Mobile */
+@media (max-width: 576px) {
+    .cv-input-wrapper {
+        flex-direction: column;
+    }
+
+    .cv-input-wrapper button {
+        width: 100%;
+    }
+}
+
+
+.cv-form .input-group {
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.cv-form .form-control {
+    min-width: 0;
     border-radius: 10px;
     padding: 0.65rem 0.85rem;
-    border: 1px solid #ced4da;
-    transition: border-color 0.2s ease, box-shadow 0.2s ease;
-}
-
-.cv-form input:focus {
-    border-color: #0d6efd;
-    box-shadow: 0 0 0 3px rgba(13, 110, 253, 0.25);
 }
 
 .cv-form button {
@@ -100,6 +116,18 @@ footer p {
     font-weight: 600;
     white-space: nowrap;
 }
+
+/* MOBILE */
+@media (max-width: 576px) {
+    .cv-form .input-group {
+        flex-direction: column;
+    }
+
+    .cv-form button {
+        width: 100%;
+    }
+}
+
 
 /* ===============================
    MOBILE TWEAKS
