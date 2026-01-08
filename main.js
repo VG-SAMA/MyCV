@@ -34,7 +34,7 @@ async function emailPost() {
         }
     
         const sendData = new EmailPost(emailAdd)
-        const response = await fetch(localUrl, {
+        const response = await fetch(emailEndPoint, {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(sendData)
