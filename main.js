@@ -68,7 +68,7 @@ async function emailPost() {
         }
 
         displayMessage(
-            `✅ Message ${result.message}`
+            `✅ ${result.message}`
             
         );
 
