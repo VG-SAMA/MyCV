@@ -55,13 +55,20 @@ async function emailPost() {
                     message = result.detail
                 }
                 
-                else if (typeof result === 'object'){
-                    message = JSON.stringify(result.detail)
-                }
-                
                 else if (Array.isArray(result.detail)) {
                     message = result.detail.map(e => e.msg).join(', ')
+                    console.log('array if ran')
                 }
+
+                else if (typeof result.error === 'string') {
+            // Custom backend errors (like 429)
+            message = result.error
+        } 
+        else {
+            // fallback for any other unexpected object
+            message = JSON.stringify(result)
+        }
+                
             }
 
             throw new Error(message)
@@ -75,7 +82,7 @@ async function emailPost() {
     } 
     
     catch (error) {
-        console.error(error)
+        //console.error(error)
         displayMessage(error.message, 'danger', 10000)
     }
 }
